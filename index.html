@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+$(document).on("pagecreate","#pageone",function(){
+  $("p").on("swipe",function(){
+    $("span").text("Swipe detected!");
+  });                       
+});
+</script>
+
+
+
+
+</head>
+<body>
+
+<div data-role="page" data-theme="b" id="pageone">
+  <div data-role="header">
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <h1>Welcome</h1>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-left">Search</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p class="ui-btn ui-corner-all ui-icon-user ui-btn-icon-left">Welcome Guest!</p>
+	<p>This website consits sensitive information about the upcoming technologies and some of the tips and tricks to decode some of the latest applications available.If you wish you see more about our website just login to our website and access all the sensitive information.
+</p>
+
+<br/><br/>
+<center>
+    <img src="http://bestmobile-review.com/wp-content/uploads/2014/08/technology_hd_desktop_wallpapers_for_widescreen_high_definition.jpg" alt="Technology" style="width:500px;">
+	 <p><span style="color:red"></span></p>
+
+</center>
+<br/><br/><br/>
+    
+
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible">
+      <h1>What the website contains</h1>
+      <p>News About latest smart phone devices</p>
+      <p>News about the latest apps in the smart phones</p>
+      <p>Some tips and tricks about cracking some of the application source codes</p>
+    </div>
+</div>
+
+
+
+
+<div data-role="main" class="ui-content">
+<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">How to Login?</a>
+<div data-role="popup" id="myPopup" class="ui-content" data-transition="flip">
+<h3>Hello!</h3>
+<p>The login process is quite simple just click the login button fill all the required details along with the type of account you     require.<br/><strong>Note: The users who need private accounts are requested to be pay with PayPal account.</strong>
+<br/>
+<a href="login"class="ui-btn ui-btn-inline ui-corner-all">Login Here</a>
+</p>
+
+
+    </div>
+</div>
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <a href="#pagetwo" data-transition="flow"  class="ui-btn ui-btn-b">Click here to see furthur details</a>
+  </div>
+
+<br/><br/>
+<div data-role="footer">
+    <h1>Developed by Vinay Pandravada</h1>
+   </div>
+</div> 
+
+
+<div data-role="page" data-dialog="true" id="pagetwo">
+  <div data-role="header">
+    <h1>ERROR!</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>You may not have certain permisiions to acces the decription of this website due to security purposes.</p>
+    <a href="#pageone" class="ui-btn ui-btn-b ui-icon-home ui-btn-icon-left" data-rel="back" >Goto Homepage</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Inconvinience is not regretted</h1>
+  </div>
+</div> 
+
+
+</body>
+</html>
